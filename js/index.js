@@ -22,3 +22,29 @@ function scrollToTop() {
     behavior: "smooth" // Enable smooth scrolling
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const overlay = document.getElementById("overlay");
+    const acceptBtn = document.getElementById("acceptBtn");
+    const cancelBtn = document.getElementById("cancelBtn");
+
+    function showOverlay() {
+        overlay.style.display = "block";
+    }
+
+    function hideOverlay() {
+        overlay.style.display = "none";
+    }
+
+    acceptBtn.addEventListener("click", function() {
+        hideOverlay();
+        // Add your 'Accept' action here
+    });
+
+    cancelBtn.addEventListener("click", function() {
+        hideOverlay();
+        // Add your 'Cancel' action here
+    });
+
+    setInterval(showOverlay, 60000); // Show overlay every 3 seconds
+});
