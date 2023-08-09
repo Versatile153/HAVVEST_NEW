@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havvest Hompage</title>
+    
+
+    <meta name="theme-color" content="#FF7A59">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="The smartest way to invest and save online
+    ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+
+  
+
+        
+
+    <meta property="og:description" content="Havvest utilizes cutting-edge algorithms and advanced AI technology to make intelligent investment decisions based on your risk tolerance, financial goals, and market trends. Sit back and relax while Havvest manages your investments efficiently.">
+    <meta property="og:title" content="We believe in diversification to minimize risk and maximize returns. Havvest automatically spreads your investments across a wide range of assets, including stocks, bonds, mutual funds, and more.">
+    <meta name="twitter:description" content="Stay informed with real-time performance updates and analytics. Havvest provides you with comprehensive reports, so you can track your portfolio's growth and make informed decisions.
+    ">
+
+    <link rel="icon" href="/img/orange_logo__havvest.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- Add Bootstrap CSS (if not already added) -->
+</head>
+<body>
+<!-- 
+    <div id="preloader">
+        <div id="loader"></div>
+    </div> -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <!-- Image on the left -->
+        <a class="navbar-brand" href="#"><img src="/img/orange_logo__havvest.png" alt="Logo"></a>
+        
+        <!-- Hamburger button for small devices -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navigation items at the center -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Invest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+            
+            <!-- Additional navigation items at the right -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-link" style="color: white;" href="#">Sign Up</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<section>
+    <div class="container center-text">
+        <h1 class="text-center spaced-words">
+            The Smartest Way to Save,<br> Invest, and Build Wealth
+        </h1>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <p class="text-center">
+                    Havvest helps you build Wealth and achieve financial freedom by enabling you to save responsibly and invest in the highest quality, high ROI real estate projects.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container text-center ">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <button class="btn btn-secondary mt-3 custom-link">Get Started</button>
+
+                <button class="btn btn mt-3 custom-link1"><a href="#">  <img src="/img/Frame 48763.png" alt=""></a></button>
+                <a href="#" style="margin-right: 2px;">
+                    <img class="circle" width="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAY1BMVEX///8AAADHx8f6+vrl5eXh4eFjY2NRUVHr6+sXFxctLS0pKSn29vbd3d3o6Oh1dXUPDw9BQUFbW1sgICC4uLjU1NRqamqCgoJvb2+ZmZmMjIyqqqpGRkahoaE8PDwbGxs1NTUB75+iAAACf0lEQVRoge2a63LCIBCFXU28JCZG22rrpfb9n7IJLBoCpDMNu0w7e35oRGa+hD3AApnNRCKRSCQSiUQi0V/R6+UtGbvawDUZPS8Adhk/d9F9ZBuA5mPBjK726msNrcpXXvYcVhredPQ9a9jnAAfV1nXZweGYs7JhqeC5hjfnLSfbhrdhZzKdYsNSXWeNhsNqzsg2hgOj45qPbbld6Uzf8IaNbs/KB7y5UNMf7IHhOl2Jw/5ke+DEvb3HhoMqyZpeEVD29j7bcbvShYftur1TSRV2m+26Xd9SxcH2Ga7TqWZgh+Avt/i93WEbtzvln9HD7rL9bld3FTnsHjbC6437T9yE0scOxbzViZyN8MqBR0UH2ObJX3zoPFZCGWB73b7TZSWc4gzyIbbH7e+9kiiDfJCN8Gxjo2v8dY+wjgizB27XDZ4/O95qcthH2JbbEW05fzcxoRxjY+qc302DD3t8c5tkulH2w+2Yv9+dCl9TBvlxtjGc+qy9Nc5kbHxydQOBGr83/E9sNFxruSZQoaBjY6Nu98EK//K5n/HOAzXI4t33ud9sZD7XT13jd+5mMnT9G4eUdhY/qqtqMJ8Tjms4mRTd9bsHTjiea3RW6F8If/5NOY9htvp4Ut3sxnCk83cob9Hw23Tyb/K11u20+drSux7VeWpFm6f2He7CY2lkXZI5aIZ1CdrMzVLo12MJ16G+3aZODOvvhPsOAYdz7LccvA5n2WdCm9nzNM/+WsJ9xYT7qR6bce0ju2i2/fOE5wYJz0sSnhNhMmz6Nef5mG0z1nNBC817HornwAVDjx6y051/pzz3T/m+g1Kq9zxmad9vSflej0gkEolEIpFIJOLTN9TxG4W3Y1IRAAAAAElFTkSuQmCC" alt="Image 2">
+                </a>
+                <a href="#" style="margin-left: 2px;">
+                    <img class="circle" width="20" src="/img/download (4).png" alt="Image 2">
+                </a>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="image-section">
+    <img src="/img/Group 967.png" alt="Centered Image" class="img-fluid">
+</section>
+
+
+<section class="getting-started-section container">
+    <div class="getting-started-text">
+        <h2>Getting Started on <span class="havvest">Havvest</span></h2>
+       
+    </div>
+</section>
+<section class="getting-started-section container">
+    <div class="row">
+        <!-- First Div -->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <div style="background-color: white; margin-bottom: 20px; padding: 20px; text-align: center;">
+                <h3 style="font-weight: 800; font-size: 18px;" class="havvest h6">Account setup</h3>
+                <p class="h6">Only 1 minute and you're in. Enter the information you need to become a HavVestor and start saving or investing right away</p>
+            </div>
+        
+            <div style="background-color: white; margin-bottom: 20px; padding: 20px; text-align: center;">
+                <h3 style="font-weight: 800; font-size: 18px;" class="havvest h6">Select a plan that suits your budget</h3>
+                <p class="h6">Select a standard plan, a project that suits your budget or a saving plan with a good duration and interest</p>
+            </div>
+        
+            <div style="background-color: white; margin-bottom: 20px; padding: 20px; text-align: center;">
+                <h3 style="font-weight: 800; font-size: 18px;" class="havvest h6">Watch your investment grow</h3>
+                <p class="h6">Invest and sit back. You can follow your investment status at any time and invest in limited time special offers</p>
+            </div>
+        
+            <div style="background-color: white; margin-bottom: 20px; padding: 20px; text-align: center;">
+                <h3 style="font-weight: 800; font-size: 18px;" class="havvest h6">Payout Day</h3>
+                <p class="h6">Your investment is eligible for withdrawal anytime after the first 24 hours</p>
+            </div>
+        </div>
+        
+        <!-- Second Div -->
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <div class="content-image">
+                <img src="/img/Frame 205.png" alt="Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image-writeup-section container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="image-writeup-image">
+                <img src="/img/Frame 2021.png" alt="Image">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="image-writeup-content">
+                <h2>Empowering you to <span class="havvest">save</span> for what matters</h2>
+                <p>
+                    Transform your financial future with Havvest. Whether you're saving for a rainy day, a down payment on a home, or your child's education, our platform empowers you to make your money work harder for you.
+                </p>
+
+                <div class="container">
+                    <div class="image-container">
+                        <a href="#">
+                            <p><img src="/img/Frame 2040.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <p><img src="/img/Frame 2041.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <p><img src="/img/Frame 2042.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <p><img src="/img/Frame 2043.png" alt=""></p>
+                        </a>
+                        
+                    </div>
+
+
+                    <div class="image-container">
+                        <a href="#">
+                            <p><img src="/img/Frame 2045.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <p><img src="/img/Frame 2045.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <p><img src="/img/Frame 2046.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <p><img src="/img/Frame 2047.png" alt=""></p>
+                        </a>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image-writeup-section container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="image-writeup-image">
+                <img src="/img/Frame 2023.png" alt="Image">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="image-writeup-image">
+                <img src="/img/Frame 2022.png" alt="Image">
+            </div>
+        </div>
+       
+                   
+
+
+          
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="image-writeup-section container">
+    <div class="row align-items-center">
+       
+        <div class="col-md-6">
+            <div class="image-writeup-content">
+                <h2>Havvest, the smarter way to invest in <span class="havvest">real estate</span></h2>
+                <p>
+                    Discover a new world of real estate investment opportunities, and unlock your financial potential with our innovative platform. From residential to commercial properties, we provide easy access to top real estate investments, backed by our expert team and cutting-edge technology.
+                </p>
+            </div>
+
+
+      
+    </div>
+    
+    <div class="col-md-6">
+        <div class="image-writeup-image">
+            <img src="/img/Frame 2024.png" alt="Image">
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="getting-started-section container">
+    <div class="getting-started-text">
+        <h2>Find the right plan for you</h2>
+        <h6>See our savings and investment plans you could start <br> with right away!</h6>
+       
+    </div>
+</section>
+
+<section class="centered-words">
+    <h4>savings</h4>
+    <h4 class="havvest havvest1">In<span>vestmen</span>ts</h4>
+</section>
+
+
+
+    <!-- Your carousel section -->
+    <section class="getting-started-section container">
+        <div class="carousel" style="margin-left: 1rem;">
+            <div class="item">
+                <div class="content-image" style="margin: 0.5rem;">
+                    <img src="/img/Frame 2059.png" alt="Image 1">
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-image" style="margin: 0.5rem;">
+                    <img src="/img/Group 979.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-image" style="margin: 0.5rem;">
+                    <img src="/img/Group 980.png" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+<section class="image-writeup-section container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="image-writeup-content">
+                <h2>Do the math and save</h2>
+                <p>
+                    See how much you can earn on the Harvvest savings. Enter an amount, we help calculate your earnings and you can save the amount right away.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-container">
+                
+                <form>
+                    <h6 class="h6">Choose a plan</h6>
+                    <div class="form-group">
+                        <label for="investment-plan">Choose an Investment Plan</label>
+                        <select id="investment-plan" class="form-control">
+                            <option value="basic">Basic</option>
+                            <option value="standard">Standard</option>
+                            <option value="proffessional">Proffessional</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="investment-amount">Enter Amount</label>
+                        <input type="number" id="investment-amount" class="form-control" placeholder="NGN 0...">
+                    </div>
+                    <div class="form-group">
+                        <label for="investment-duration">Choose an Investment Duration</label>
+                        <select id="investment-duration" class="form-control">
+                            <option value="1">3,6& 12 months</option>
+                            <option value="3">6,9 & 12  Years</option>
+                            <option value="5">6,9 & 12  Years</option>
+                        </select>
+                    </div>
+                    <h6 class="h6">You will get</h6>
+                    <h1 style="font-weight: 800;" class="h6">NGN 0</h1>
+                    <button type="submit" class="btn btn-primary full-width-button custom-link">Invest</button>
+                    <div style="display: flex; align-items: center;">
+                        <img src="/img/check (3) 1.png" alt="" style="width:20px; height: 20px; border: 1px solid gray; border-radius: 100%; margin-top: 0.5rem;">
+                        <img style="margin-top: 1rem; margin-left: 10px;" class="h6" src="/img/7 customer support.png" alt="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="getting-started-section container">
+    <div class="getting-started-text">
+        <h2>Some of our project based investment</h2>
+        <p>
+        See our project based investments  you could start <br> with right away!
+    </p>
+    </div>
+</section>
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+          <a href="#">  <img src="/img/Frame 2095.png" alt="Image 1" class="img-fluid"></a>
+        </div>
+        <div class="col-md-4">
+         <a href="#">   <img src="/img/Frame 2096.png" alt="Image 2" class="img-fluid"></a>
+        </div>
+        <div class="col-md-4">
+            <img src="/img/Frame 2097.png" alt="Image 3" class="img-fluid">
+            <a href="#"></a>
+
+        </div>
+    </div>
+</div>
+
+
+<section class="getting-started-section container">
+    <div class="getting-started-text">
+        <h2>We have great customer reviews</h2>
+        <p>
+            Our users love and trust us, its time for you become a <br> Havvestor
+    </p>
+    </div>
+</section>
+
+<section class="getting-started-section container">
+    <div class="carousel">
+        <div class="item">
+            <div class="content-image" style="margin: 0.5rem;">
+                <img src="/img/Group 977.png" alt="Image 2" class="img-fluid">
+            </div>
+        </div>
+        <div class="item">
+            <div class="content-image" style="margin: 0.5rem;">
+                <img src="/img/Group 976.png" alt="Image 1" class="img-fluid">
+            </div>
+        </div>
+        <div class="item">
+            <div class="content-image" style="margin: 0.5rem;">
+                <img src="/img/Group 978.png" alt="Image 3" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="section-content">
+                <p class="font-weight-bold text-center text-md-left fs-5 fs-md-4">Get started on Havvest now!</p>
+                <h2 class="font-weight-bold text-center text-md-left fs-4 fs-md-3">The Smartest Way to Save, Invest <br> and Build Wealth</h2>
+            </div>
+            
+
+            <div class="image-container row">
+                <div class="col-12 mt-2" >
+                    <a href="#"><img src="/img/Frame 2033.png" alt=""></a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="#"><img src="/img/Frame 2032.png" alt=""></a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="#"><img src="/img/Frame 2034.png" alt=""></a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="#"><img src="/img/Frame 2035.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mt-2">
+            <div class="text-center text-md-right mt-4 mt-md-0">
+                <a href="#" class="btn btn-primary custom-link">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- footer -->
+
+
+<footer class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h4 class="mb-3">Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li>Standard Plans</li>
+                    <li>Affiliate System</li>
+                    <li>Save & Earn</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 mb-4">
+                <h4 class="mb-3">Company</h4>
+                <ul class="list-unstyled">
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 mb-4">
+                <h4 class="mb-3">Resources</h4>
+                <ul class="list-unstyled">
+                    <li>Raise a Dispute</li>
+                    <li>Your Account</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h4 class="mb-3">Legal</h4>
+                <ul class="list-unstyled">
+                    <li>Privacy</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h4 class="mb-3">Contact</h4>
+                <ul class="list-unstyled ">
+                    <li><a style="color: blue;" href=""> Support@havvest.com</a>  </li>
+                   
+                   <li class="mt-2"> <a href="tel:+2348032978211">+234-803-297-8211</a> </li>
+
+                </ul>
+            </div>
+            
+            <div class="col-md-3 mb-4">
+                <h4 class="mb-3">USA</h4>
+                <ul class="list-unstyled">
+                    <p>U.S: 1968 S. Coast Hwy, Laguna Beach, California</p>
+                  
+                </ul>
+            </div>
+            
+            <div class="col-md-3 mb-4">
+                <h4 class="mb-3">Nigeria</h4>
+                <ul class="list-unstyled">
+               <p>23 Coal City Gardens, GRA, Enugu.</p>
+                    
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <img src="/img/orange_logo__havvest.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="/js/index.js"></script>
+<!-- Add Bootstrap JS script for hamburger functionality -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        // Initialize Slick Carousel
+        $(".carousel").slick({
+            slidesToShow: 3, // Number of slides displayed on larger devices
+            slidesToScroll: 1, // Number of slides scrolled at a time
+            infinite: true, // Infinite loop
+            arrows: true, // Display navigation arrows
+            dots: false, // Disable dots
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2 // Display two slides on tablets
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1, // Display one slide on mobile devices
+                        autoplay: true, // Enable autoplay
+                        autoplaySpeed: 3000, // Autoplay interval (3 seconds)
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+
+    <!-- Add Slick Carousel JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Add Bootstrap JS (if not already added) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

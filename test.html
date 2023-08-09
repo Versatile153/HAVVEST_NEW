@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Carousel Slideshow</title>
+    <!-- Add Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <!-- Add Bootstrap CSS (if not already added) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS to center the image within the slide */
+        .slick-slide img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- Your carousel section -->
+    <section class="getting-started-section container">
+        <div class="carousel">
+            <div class="item">
+                <div class="content-image">
+                    <img src="/img/Frame 2059.png" alt="Image 1">
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-image">
+                    <img src="/img/Group 979.jpg" alt="Image 2">
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-image">
+                    <img src="/img/Group 980.png" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Slick Carousel JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Add Bootstrap JS (if not already added) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Slick Carousel
+            $(".carousel").slick({
+                slidesToShow: 3, // Number of slides displayed on larger devices
+                slidesToScroll: 1, // Number of slides scrolled at a time
+                infinite: true, // Infinite loop
+                arrows: true, // Display navigation arrows
+                dots: false, // Disable dots
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2 // Display two slides on tablets
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1, // Display one slide on mobile devices
+                            autoplay: true, // Enable autoplay
+                            autoplaySpeed: 3000, // Autoplay interval (3 seconds)
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
