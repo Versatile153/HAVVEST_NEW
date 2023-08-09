@@ -46,5 +46,5 @@ document.addEventListener("DOMContentLoaded", function() {
         // Add your 'Cancel' action here
     });
 
-    setInterval(showOverlay, 60000); // Show overlay every 3 seconds
+    setInterval(showOverlay, 30000); // Show overlay every 3 seconds
 });
