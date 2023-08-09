@@ -410,6 +410,7 @@ GENERAL MEDIA QUERY
     }
   }
 
+  
   /* Styles for the loading overlay */
 .loading-overlay {
     position: fixed;
@@ -443,4 +444,43 @@ GENERAL MEDIA QUERY
       transform: rotate(360deg);
     }
   }
+
+ /* Styles for the scroll-to-top button */
+
+  .scroll-to-top button {
+    background-color: #da3005;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+  }
   
+  .scroll-to-top button:hover {
+    background-color: #0056b3;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    margin: 0 5px;
+    /* color: white; */
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #ffc107; /* Change color on hover */
+  }
+  
+  @media (max-width: 1280px) {
+    /* For screens smaller than or equal to 576px (e.g., smartphones) */
+    .custom-section {
+      padding-top: 6rem;
+      padding-bottom: 40px;
+    }
+  }
+
+  .custom-section {
+    padding-top: 6rem;
+    padding-bottom: 40px;
+  }
