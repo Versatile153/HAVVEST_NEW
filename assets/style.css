@@ -571,3 +571,13 @@ GENERAL MEDIA QUERY
     border: none;
     margin: 10px;
 }
+
+/* Custom CSS */
+/* Custom CSS */
+@media (max-width: 767px) { /* Apply only for small devices */
+    .img-reduced-width {
+        max-width: 90%; /* Adjust this value as needed */
+        transform: scaleY(1.4);
+        margin-bottom: 1rem;
+    }
+}
