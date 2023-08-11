@@ -581,3 +581,94 @@ GENERAL MEDIA QUERY
         margin-bottom: 1rem;
     }
 }
+.content{
+    font-family: Montserrat;
+font-size: 48px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.content-1{
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+.space-invest{
+
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+    
+}
+
+.hover-zoom {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.hover-zoom img {
+    transition: transform 0.3s;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+
+
+    .accordion {
+        margin-top: 30px;
+    }
+
+    .accordion-item {
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+    }
+
+    .accordion-header {
+        background-color: #fcfcfc;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .accordion-button::after {
+        content: '\002B'; /* Plus icon */
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 18px;
+    }
+
+    .accordion-button.collapsed::after {
+        content: '\2212'; /* Minus icon */
+    }
+
+    .accordion-body {
+        background-color: #fff;
+        border-top: 1px solid #ddd;
+        padding: 20px;
+    }
+
+    .accordion-button {
+        border: none;
+    }
+    
+    
