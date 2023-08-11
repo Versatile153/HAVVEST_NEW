@@ -375,7 +375,7 @@
                     <div class="form-group">
                         <label for="investment-plan">Choose an Investment Plan</label>
                         <select id="investment-plan" class="form-control">
-                            <option value="basic">Basic</option>
+                            <option value="bronze">Bronze</option>
                             <option value="standard">Standard</option>
                             <option value="proffessional">Proffessional</option>
                         </select>
@@ -393,7 +393,8 @@
                         </select>
                     </div>
                     <h6 class="h6">You will get</h6>
-                    <h1 style="font-weight: 800;" class="h6">NGN 0</h1>
+                    <h1 id="calculated-result" style="font-weight: 800;" class="h6">NGN 0</h1>
+
                     <button type="submit" class="btn btn-primary full-width-button custom-link button">Invest</button>
                     <div style="display: flex; align-items: center;">
                         <img src="/img/check (3) 1.png" alt="" style="width:20px; height: 20px; border: 1px solid gray; border-radius: 100%; margin-top: 0.5rem;">
@@ -708,6 +709,63 @@
   </script>
   
   
+
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get references to the form elements
+        const investmentPlanSelect = document.getElementById("investment-plan");
+        const investmentAmountInput = document.getElementById("investment-amount");
+        const investmentDurationSelect = document.getElementById("investment-duration");
+        const calculatedResult = document.getElementById("calculated-result");
+
+        // Event listener for form submission
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get selected values
+            const selectedPlan = investmentPlanSelect.value;
+            const investmentAmount = parseFloat(investmentAmountInput.value);
+            const selectedDuration = parseInt(investmentDurationSelect.value);
+
+            // Perform calculations based on the selected plan and duration
+            let calculatedValue = 0;
+            if (selectedPlan === "bronze") {
+                if (investmentAmount >= 500 && investmentAmount <= 99999) {
+                    calculatedValue = investmentAmount * 0.05;
+                }
+            } else {
+                if (investmentAmount >= 1000000 && investmentAmount < 99000000) {
+                    calculatedValue = investmentAmount * 0.07;
+                } else if (investmentAmount >= 99000000) {
+                    calculatedValue = investmentAmount * 0.15;
+                }
+            }
+
+            // Update the calculated result
+            calculatedResult.textContent = `NGN ${calculatedValue.toFixed(2)}`;
+        });
+
+        // Disable duration options for Bronze plan
+        investmentPlanSelect.addEventListener("change", function () {
+            if (investmentPlanSelect.value === "bronze") {
+                investmentDurationSelect.value = "1"; // Set to default value
+                investmentDurationSelect.disabled = true;
+            } else {
+                investmentDurationSelect.disabled = false;
+            }
+        });
+    });
+</script>
+
+
       <!-- Add Slick Carousel JS and jQuery -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
