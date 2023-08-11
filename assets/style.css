@@ -682,4 +682,7 @@ text-align: right;
 
     }
     
+    .custom-text {
+        font-weight: normal; 
+    }
     
