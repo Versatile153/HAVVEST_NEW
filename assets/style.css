@@ -776,3 +776,40 @@ text-align: right;
         margin-left: 2rem;
         height: auto;
       }
+
+      .careers {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        /* line-height: 37px; */
+        letter-spacing: 0em;
+        /* text-align: center; */
+        
+      }
+
+
+      .careers-page {
+        background: #212121;
+
+        
+        
+      }
+      .carr {
+        color: linear-gradient(90.95deg, #00A3FF 60.36%, #7E2EFF 80.51%, #CC00FF 100.65%),
+        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        
+
+        
+        
+      }
+
+
+
+      .gradient-heading {
+        background: linear-gradient(90.95deg, #00A3FF 60.36%, #7E2EFF 80.51%, #CC00FF 100.65%),
+                    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    
