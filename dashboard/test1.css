@@ -219,6 +219,13 @@ body {
 	gap: 1rem; /* Set the gap between images */
 }
 
+
+
+.welcome {
+	display: flex;
+	gap: .4rem;
+}
+
 .act img {
 	max-width: 100%;
 	height: auto;
@@ -402,7 +409,7 @@ text-align: left;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	grid-gap: 16px;
+	grid-gap: 10px;
 	flex-wrap: wrap;
 }
 #content main .head-title .left h1 {
@@ -451,7 +458,8 @@ text-align: left;
 }
 #content main .box-info li {
 	padding: 24px;
-	background: var(--light);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to each image */
+
 	border-radius: 20px;
 	display: flex;
 	align-items: center;
@@ -741,6 +749,7 @@ text-align: left;
 .breadcrumb {
 	list-style: none;
 	display: flex;
+
 	align-items: center;
 	margin: 0;
 	padding: 0;
@@ -749,6 +758,7 @@ text-align: left;
 .breadcrumb li {
 	margin: 0;
 	padding: 0;
+	margin-top: 1rem;
 }
 
 .breadcrumb li i {
