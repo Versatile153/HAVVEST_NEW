@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description"
+        content="Havvest utilizes cutting-edge algorithms and advanced AI technology to make intelligent investment decisions based on your risk tolerance, financial goals, and market trends. Sit back and relax while Havvest manages your investments efficiently.">
+    <meta property="og:title"
+        content="We believe in diversification to minimize risk and maximize returns. Havvest automatically spreads your investments across a wide range of assets, including stocks, bonds, mutual funds, and more.">
+    <meta name="twitter:description" content="Stay informed with real-time performance updates and analytics. Havvest provides you with comprehensive reports, so you can track your portfolio's growth and make informed decisions.
+    ">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="/dashboard/test1.css">
+
+   <!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    /* Add custom CSS here */
+</style>
+
+	<title>Havvest Dashboard</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar" style="background: #FFFFFF;
+    ">
+		<a style="margin-left: 2rem;" href="#" class="brand">
+			<img src="/img/orange_logo__havvest.png" alt="">
+		</a>
+		<ul class="side-menu top">
+			<li class="">
+				<a href="#">
+					<img src="/dashboard/img/Frame 2.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 48590.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 48590 (1).png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 4.png" alt="">
+
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 5.png" alt="">
+				</a>
+			</li>
+
+            <li>
+				<a href="#">
+				<img src="/dashboard/img/Frame 6.png" alt="">
+				</a>
+			</li>
+
+            <li>
+				<a href="#" class="">
+					<img src="/dashboard/img/Frame 7.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 48592.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#" class="">
+					<img src="/dashboard/img/Frame 48593.png" alt="">
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search..." hidden>
+                   
+					<button type="submit" class="search-btn" hidden>
+                        <i class='bx ' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+                <img src="/dashboard/img/Frame 75.png" alt="">
+
+				<span class="num">8</span>
+			</a>
+			<button id="dropdownButton" type="button" class="btn btn-primary dropdown-toggle">
+				<i class="fas fa-user-circle" style="color: blue;"></i> Profile
+			</button>
+			<div class="dropdown-menu" id="dropdownMenu">
+				<a class="dropdown-item" href="#">Profile</a>
+				<a class="dropdown-item" href="#">
+					<i class="fas fa-lock" style="color: green;"></i> 
+				</a>
+				
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" style="color: red;" href="#">Logout</a>
+			</div>
+			
+			<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				const dropdownButton = document.getElementById("dropdownButton");
+				const dropdownMenu = document.getElementById("dropdownMenu");
+			
+				dropdownButton.addEventListener("click", function() {
+					if (dropdownMenu.style.display === "block") {
+						dropdownMenu.style.display = "none";
+					} else {
+						positionDropdown();
+						dropdownMenu.style.display = "block";
+					}
+				});
+			
+				// Close dropdown when clicking outside
+				document.addEventListener("click", function(event) {
+					if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+						dropdownMenu.style.display = "none";
+					}
+				});
+			
+				function positionDropdown() {
+					dropdownMenu.style.left = dropdownButton.offsetLeft + "px";
+					dropdownMenu.style.top = dropdownButton.offsetTop + dropdownButton.offsetHeight + "px";
+				}
+			});
+			</script>
+			
+		</nav>
+       
+		<!-- NAVBAR -->
+
+
+		<main style="background: #FFFFFF;
+		">
+			<div class="head-title">
+				<div class="left">
+					<h3 class="Welcome">Welcome, Sandy Oluwatobi</h3>
+				
+					<ul class="breadcrumb">
+						
+						<li>
+							
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#" style="color: #FC4E04;">Home</a>
+						</li>
+					</ul>
+					
+				</div>
+				
+			
+			</div>
+
+			<br>
+
+			<div class="center">
+				<strong>Account Balance</strong>
+				<div class="bal">
+					<h2>N500,000 </h2>
+				<img src="/dashboard/img/Component 6.png" alt="">
+				</div>
+			</div>
+			<ul class="box-info">
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 94.png" alt="">
+					</span>
+				</li>
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 91.png" alt="">
+					</span>
+				</li>
+				<li>
+				
+					<span class="text">
+						<img src="/dashboard/img/Frame 90.png" alt="">
+					</span>
+				</li>
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 89.png" alt="">
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="act">
+				<a href=""><img src="/dashboard/img/Frame 98.png" alt=""></a>
+				
+				<a href="">
+				<img src="/dashboard/img/Frame 99.png" alt="">
+
+				</a>
+			</div>
+
+
+
+
+			<ul class="three_imgs">
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 103 (1).png" alt="">
+					</span>
+				</li>
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 104 (1).png" alt="">
+					</span>
+				</li>
+				<li>
+				
+					<span class="text">
+						<img src="/dashboard/img/Frame 105.png" alt="">
+					</span>
+				</li>
+				
+			</ul>
+
+
+
+
+			<div class="container">
+				<h3>Earnings</h3>
+				<a href="">
+					<h3 style="margin-left: auto;">View all</h3>
+				</a>
+			</div>
+
+			<div class="table-container">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Amount</th>
+						<th>Date </th>
+						<th>status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>investment</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+					</tr>
+					<tr>
+						<td>Top up</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+
+
+					</tr>
+					<tr>
+						<td>investment bonus</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+
+
+					</tr>
+					<tr>
+						<td>Top up</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+
+
+					</tr>
+					<!-- Add more rows as needed -->
+				</tbody>
+			</table>
+		</div>
+			
+
+
+
+			
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<!-- Include jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Include Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // You don't need to add any additional JavaScript code for this dropdown
+</script>
+
+
+    <script src="/dashboard/dash.js"></script>
+</body>
+</html>
