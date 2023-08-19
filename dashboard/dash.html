@@ -1,157 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/dashboard/index.css">
-    <title>Havvest Dashboard </title>
-    
-</head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description"
+        content="Havvest utilizes cutting-edge algorithms and advanced AI technology to make intelligent investment decisions based on your risk tolerance, financial goals, and market trends. Sit back and relax while Havvest manages your investments efficiently.">
+    <meta property="og:title"
+        content="We believe in diversification to minimize risk and maximize returns. Havvest automatically spreads your investments across a wide range of assets, including stocks, bonds, mutual funds, and more.">
+    <meta name="twitter:description" content="Stay informed with real-time performance updates and analytics. Havvest provides you with comprehensive reports, so you can track your portfolio's growth and make informed decisions.
+    ">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="/dashboard/dash.css">
+
+   <!-- Include Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
-
+    /* Add custom CSS here */
 </style>
+
+	<title>Havvest Dashboard</title>
+</head>
 <body>
 
-    <div class="container">
-        <!-- Sidebar Section -->
-        
-        <aside>
-         
-            <div class="sidebar-logo mt-4" style="margin-top: 2rem;margin-left: -1rem;">
-                <div class="img-fluid mt-2">
-                  <img style="width: 100px; margin: auto;" src="/img/orange_logo__havvest.png" alt="">
-                </div>
-              </div>
 
-            <div class="toggle">
-                <div class="logo">
-                    <!-- <img src="/img/orange_logo__havvest.png"> -->
-                </div>
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">
-                        close
-                    </span>
-                </div>
-            </div>
+	<!-- SIDEBAR -->
+	<section id="sidebar" style="background: #FFFFFF;
+    ">
+		<a style="margin-left: 2rem;" href="#" class="brand">
+			<img src="/img/orange_logo__havvest.png" alt="">
+		</a>
+		<ul class="side-menu top">
+			<li class="">
+				<a href="#">
+					<img src="/dashboard/img/Frame 2.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 48590.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 48590 (1).png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 4.png" alt="">
 
-            <div class="sidebar">
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        dashboard
-                    </span>
-                    <h3 style="color: #fd7b30;">Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        person_outline
-                    </span>
-                    <h3>Standard investment</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        receipt_long
-                    </span>
-                    <h3>Project Investment</h3>
-                </a>
-                <a href="#" class="">
-                    <span class="material-icons-sharp">
-                        insights
-                    </span>
-                    <h3>PayOut</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        save
-                    </span>
-                    <h3>Save & Earn</h3>
-                    <!-- <span class="message-count">27</span> -->
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        inventory
-                    </span>
-                    <h3>Transfer money</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        report_gmailerrorred
-                    </span>
-                    <h3>Affiliate System</h3>
-                </a>
-             
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        add
-                    </span>
-                    <h3>Support</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">
-                        logout
-                    </span>
-                    <h3>Sign Out</h3>
-                </a>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 5.png" alt="">
+				</a>
+			</li>
 
-                
-            </div>
-        </aside>
-        <!-- End of Sidebar Section -->
+            <li>
+				<a href="#">
+				<img src="/dashboard/img/Frame 6.png" alt="">
+				</a>
+			</li>
 
-       <main>
-           
-   
-        </main>
+            <li>
+				<a href="#" class="">
+					<img src="/dashboard/img/Frame 7.png" alt="">
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<img src="/dashboard/img/Frame 48592.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#" class="">
+					<img src="/dashboard/img/Frame 48593.png" alt="">
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
 
 
 
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search..." hidden>
+                   
+					<button type="submit" class="search-btn" hidden>
+                        <i class='bx ' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+                <img src="/dashboard/img/Frame 75.png" alt="">
+
+				<span class="num">8</span>
+			</a>
+			<button style="background-color: #ceccca;" id="dropdownButton" type="button" class="btn btn dropdown-toggle">
+				<i class="fas fa-user-circle" style="color:#FC4E04;"></i> Profile
+			</button>
+			<div class="dropdown-menu" id="dropdownMenu">
+				<a class="dropdown-item" href="#">Profile</a>
+				<a class="dropdown-item" href="#">
+					<i class="fas fa-lock" style="color: green;"></i> 
+				</a>
+				
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" style="color: red;" href="#">Logout</a>
+			</div>
+			
+			<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				const dropdownButton = document.getElementById("dropdownButton");
+				const dropdownMenu = document.getElementById("dropdownMenu");
+			
+				dropdownButton.addEventListener("click", function() {
+					if (dropdownMenu.style.display === "block") {
+						dropdownMenu.style.display = "none";
+					} else {
+						positionDropdown();
+						dropdownMenu.style.display = "block";
+					}
+				});
+			
+				// Close dropdown when clicking outside
+				document.addEventListener("click", function(event) {
+					if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+						dropdownMenu.style.display = "none";
+					}
+				});
+			
+				function positionDropdown() {
+					dropdownMenu.style.left = dropdownButton.offsetLeft + "px";
+					dropdownMenu.style.top = dropdownButton.offsetTop + dropdownButton.offsetHeight + "px";
+				}
+			});
+			</script>
+			
+		</nav>
+       
+		<!-- NAVBAR -->
+
+
+		<main style="background: #FFFFFF;
+		">
+			<div class="head-title">
+				<div class="left">
+					<div class="welcome">
+						<h3 class="Welcome">Welcome, Sandy Oluwatobi</h3>
+						<img src="/dashboard/img/goodbye 1.png" alt="">
+				
+					</div>
+					<ul class="breadcrumb">
+						
+						
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#" style="color: #FC4E04;">Home</a>
+						</li>
+					</ul>
+					
+				</div>
+				
+			
+			</div>
+
+			<br>
+
+			<div class="center">
+				<strong>Account Balance</strong>
+				<div class="bal">
+					<h2>N500,000 </h2>
+				<img src="/dashboard/img/Component 6.png" alt="">
+				</div>
+			</div>
+			<ul class="box-info">
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 94.png" alt="">
+					</span>
+				</li>
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 91.png" alt="">
+					</span>
+				</li>
+				<li>
+				
+					<span class="text">
+						<img src="/dashboard/img/Frame 90.png" alt="">
+					</span>
+				</li>
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 89.png" alt="">
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="act">
+				<a href=""><img src="/dashboard/img/Frame 98.png" alt=""></a>
+				
+				<a href="">
+				<img src="/dashboard/img/Frame 99.png" alt="">
+
+				</a>
+			</div>
 
 
 
-        <!-- End of Main Content -->
 
-        <!-- Right Section -->
-        <div class="right-section">
-            <div class="nav">
-                <button id="menu-btn">
-                    <span class="material-icons-sharp">
-                        menu
-                    </span>
-                </button>
-                <div class="dark-mode">
-                    <span class="material-icons-sharp active">
-                        light_mode
-                    </span>
-                    <span class="material-icons-sharp">
-                        dark_mode
-                    </span>
-                </div>
-
-                <div class="profile">
-                    <div class="profile-photo">
-                        <img src="/dashboard/img/Frame 75.png">
-                    <!-- <span class="message-count">27</span> -->
-
-                    </div>
-                    <div class="info">
-                        <p>Hey, <b>Reza</b></p>
-                        
-                     
-                    </div>
-                    
-                </div>
-
-            </div>
-            
-
-          
+			<ul class="three_imgs">
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 103 (1).png" alt="">
+					</span>
+				</li>
+				<li>
+					
+					<span class="text">
+						<img src="/dashboard/img/Frame 104 (1).png" alt="">
+					</span>
+				</li>
+				<li>
+				
+					<span class="text">
+						<img src="/dashboard/img/Frame 105.png" alt="">
+					</span>
+				</li>
+				
+			</ul>
 
 
-    <!-- <script src="orders.js"></script> -->
-    <script src="/js/index.js"></script>
+
+
+			<div class="container">
+				<h5>Earnings</h5>
+				<a href="">
+					<h5 style="margin-left: auto;color: #8D8D8D;
+					">View all</h5>
+				</a>
+			</div>
+
+			<div class="table-container">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Amount</th>
+						<th>Date </th>
+						<th>status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>investment</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+					</tr>
+					<tr>
+						<td>Top up</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+
+
+					</tr>
+					<tr>
+						<td>investment bonus</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+
+
+					</tr>
+					<tr>
+						<td>Top up</td>
+						<td><img src="/dashboard/img/Frame 110.png" alt=""></td>
+						<td>N500,000</td>
+						<td>Data 4</td>
+						<td class="tr">Successful</td>
+
+
+					</tr>
+					<!-- Add more rows as needed -->
+				</tbody>
+			</table>
+		</div>
+			
+
+
+
+			
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<!-- Include jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Include Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // You don't need to add any additional JavaScript code for this dropdown
+</script>
+
+<script src="https://cdn.userway.org/widget.js?account=PZa9u9ExIk"></script>
+
+    <script src="/dashboard/dash.js"></script>
 </body>
-
 </html>
