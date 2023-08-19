@@ -16,7 +16,24 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="/dashboard/dash.css">
-
+    
+        <!-- Other meta tags and stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+		<script type="text/javascript">// <![CDATA[
+			function googleTranslateElementInit() {
+			new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+			}
+			// ]]></script>
+			<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+			
+			  <!-- Global site tag (gtag.js) - Google Ads: 10962727561 -->
+			  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10962727561"></script>
+			  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10962727561'); </script>
+			
+			
    <!-- Include Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
@@ -160,6 +177,10 @@
 
 		<main style="background: #FFFFFF;
 		">
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar" style="width: 0;"></div>
+        </div>
 			<div class="head-title">
 				<div class="left">
 					<div class="welcome">
@@ -183,6 +204,10 @@
 
 			<br>
 
+			<!-- language selector -->
+			<div id="google_translate_element"></div>
+
+			<!-- language selector -->
 			<div class="center">
 				<strong>Account Balance</strong>
 				<div class="bal">
@@ -219,14 +244,43 @@
 
 
 			<div class="act">
-				<a href=""><img src="/dashboard/img/Frame 98.png" alt=""></a>
-				
-				<a href="">
-				<img src="/dashboard/img/Frame 99.png" alt="">
+                <a href="https://havvestnew.netlify.app/about/about" class="action-link" data-toggle="modal" data-target="#confirmationModal" data-action="delete">
+                    <img src="/dashboard/img/Frame 98.png" alt="">
+                </a>
+                
+                <a href="#" class="action-link" data-toggle="modal" data-target="#confirmationModal" data-action="edit">
+                    <img src="/dashboard/img/Frame 99.png" alt="">
+                </a>
+            </div>
+            
+     
 
-				</a>
-			</div>
 
+
+<!-- Modal Structure -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <!-- Modal content here -->
+            <div class="modal-header">
+                <div class=" align-items-center  modal_img">
+                    <img src="/img/orange_logo__havvest.png" alt="">
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to perform this action?</p>
+                <img src="/img/Frame 205.png" alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn" style="background-color: #FC4E04; color: wheat;" id="confirmAction">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

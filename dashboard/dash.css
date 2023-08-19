@@ -233,16 +233,20 @@ body {
 .center {
 	font-family: Montserrat;
 font-size: 14px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to each image */
+
 font-weight: 600;
 line-height: 17px;
+align-items: center;
+justify-content: center;
 letter-spacing: 0em;
-text-align: left;
+text-align: center;
 
 	width: 80%;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: .4rem;
+	/* flex-direction: column; */
+
+	gap: 1rem;
 	
 }
 .center .bal{
@@ -408,6 +412,8 @@ text-align: left;
 #content main .head-title {
 	display: flex;
 	align-items: center;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to each image */
+background-color: white;
 	justify-content: space-between;
 	grid-gap: 10px;
 	flex-wrap: wrap;
@@ -420,6 +426,9 @@ text-align: left;
 }
 #content main .head-title .left .breadcrumb {
 	display: flex;
+    background-color: white;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to each image */
+
 	align-items: center;
 	grid-gap: 16px;
 }
@@ -847,12 +856,72 @@ text-align: left;
 	/* Responsive styles */
 	@media screen and (max-width: 768px) {
 		.container {
-			flex-direction: column;
+			flex-direction: row;
 			text-align: center;
 		}
 
+        .breadcrumb ul {
+            display: flex;
+
+        }
+
+        
 		.container h3 {
 			margin: 10px 0;
 		}
+
+        .modal_img {
+			margin-left: 3rem;
+		}
+
+
+
+
+
+
+
+
+
+        p {
+            font-size: 18px;
+        }
+    
+        /* Media query for small devices */
+        @media (max-width: 767px) {
+            p {
+                margin-left: 3rem;
+                font-size: 16px; /* Adjust the font size as needed */
+            }
+        }
 	}
 	
+    
+    /* Add your existing styles here */
+
+.progress-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: filter 0.3s;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.modal-content {
+    height: 80vh; /* Adjust the height as needed */
+    width: 50vw;
+}
+
+.modal-body {
+    text-align: center; /* Center the content */
+}
+
+.modal-body img {
+    max-width: 100%; /* Make the image fit within the div */
+    height: auto; /* Maintain the image's aspect ratio */
+}
